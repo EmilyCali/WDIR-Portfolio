@@ -3,14 +3,105 @@
   <head>
     <meta charset="utf-8">
     <title>Emily Cali portfolio</title>
-    <!-- javascript -->
-      <!-- jquery -->
-      <!-- own files -->
-    <script type="text/javascript" src="js/app.js"></script>
+
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/main.css" />
   </head>
   <body>
+
+<!-- ===========MODALS============== -->
+    <!-- linkedin modal -->
+    <!-- <section id="linkedInModal"> -->
+      <!-- frame inside linkedin modal -->
+      <!-- <div id="linkedInModalFrame" class="modalframe">
+        <iframe src="https://www.linkedin.com/in/emilycali/"></iframe>
+        <a id="closeLinkedInModal" href="#"> Close </a>
+      </div>
+    </section> -->
+
+    <!-- project 1 modal -->
+    <section id="warModal">
+      <!-- frame inside project 1 modal -->
+      <div id="warModalFrame" class="modalframe">
+        <iframe src="https://emilycali.github.io/WDIR-Project-1-WAR/"></iframe>
+        <a id="closeWarModal" href="#"> Close </a>
+      </div>
+    </section>
+
+    <!-- project 2 modal -->
+    <section id="gardenModal">
+      <!-- frame inside project 2 modal -->
+      <div id="gardenModalFrame" class="modalframe">
+        <iframe src="https://safe-chamber-59689.herokuapp.com/"></iframe>
+        <a id="closeGardenModal" href="#"> Close </a>
+      </div>
+    </section>
+
+    <!-- project 3 modal -->
+    <section id="beerBookModal">
+      <!-- frame inside project 3 modal -->
+      <div id="beerBookModalFrame" class="modalframe">
+        <iframe src="https://superawsomefunteam.herokuapp.com/"></iframe>
+        <a id="closeBeerBookModal" href="#"> Close </a>
+      </div>
+    </section>
+
+    <!-- project 4 modal -->
+    <section id="hungryModal">
+      <!-- frame inside project 4 modal -->
+      <div id="hungryModalFrame" class="modalframe">
+        <iframe src="https://hungry-for-more-app.herokuapp.com/"></iframe>
+        <a id="closeHungryModal" href="#"> Close </a>
+      </div>
+    </section>
+
+    <!-- project 5 modal -->
+    <section id="quiltModal">
+      <!-- frame inside project 5 modal -->
+      <div id="quiltModalFrame" class="modalframe">
+        <iframe></iframe>
+        <a id="closeQuiltModal" href="#"> Close </a>
+      </div>
+    </section>
+
+    <!-- github profile modal -->
+    <!-- <section id="githubModal"> -->
+      <!-- frame inside github profile modal -->
+      <!-- <div id="githubModalFrame" class="modalframe">
+        <iframe src="https://github.com/EmilyCali"></iframe>
+        <a id="closeGithubModal" href="#"> Close </a>
+      </div>
+    </section> -->
+
+    <!-- flickr modal -->
+    <section id="flickrModal">
+      <!-- frame inside flickr modal -->
+      <div id="flickrModalFrame" class="modalframe">
+        <iframe></iframe>
+        <a id="closeFlickrModal" href="#"> Close </a>
+      </div>
+    </section>
+
+    <!-- instagram modal -->
+    <!-- <section id="instaModal"> -->
+      <!-- frame inside instagram modal -->
+      <!-- <div id="instaModalFrame" class="modalframe"> -->
+        <!-- <iframe src="http://www.pictaram.com/user/emilychickadee/2306756208"></iframe> -->
+        <!-- <a id="closeInstaModal" href="#"> Close </a> -->
+      <!-- </div> -->
+    <!-- </section> -->
+
+    <!-- etsy modal -->
+    <!-- <section id="etsyModal"> -->
+      <!-- frame inside etsy modal -->
+      <!-- <div id="etsyModalFrame" class="modalframe">
+        <iframe src="https://www.etsy.com/shop/Caleari"></iframe>
+        <a id="closeEtsyModal" href="#"> Close </a>
+      </div>
+    </section> -->
+<!-- ===========END MODALS============== -->
+
+
     <!-- container div to hold everything -->
     <div>
       <!-- section for about (what is this site, why is this site, faqs) -->
@@ -22,29 +113,37 @@
       <div id="bio">
         <h2> Bio </h2>
         <p> About Me </p>
-        <p> <a href="#"> LinkedIn </a> </p>
+        <p> <a id="linkedin" href="https://www.linkedin.com/in/emilycali/"> LinkedIn </a> </p>
         <!-- need a pdf holder for resume -->
         <p> <a href="#"> Resume </a> </p>
       </div>
       <!-- section for github profile and links to projects -->
       <div id="github">
         <h2> Projects </h2>
-        <p> <a href="#"> The Card Game War </a> </p>
-        <p> <a href="#"> Garden Box </a> </p>
-        <p> <a href="#"> Books and Beers </a> </p>
-        <p> <a href="#"> Hungry for More </a> </p>
-        <p> <a href="#"> Github Account </a> </p>
+        <p> <a id="war" href="#"> The Card Game War </a> </p>
+        <p> <a id="garden" href="#"> Garden Box </a> </p>
+        <p> <a id="beerbooks" href="#"> Books and Beers </a> </p>
+        <p> <a id="hungry" href="#"> Hungry for More </a> </p>
+        <p> <a id="quilt" href="#"> Quilt Creator </a> </p>
+        <p> <a id="git" href="https://github.com/EmilyCali"> Github Account </a> </p>
       </div>
       <!-- section for social media and contact(flickr including gallery, etsy, instagram, email) -->
       <div id="social">
         <h2> Social Media </h2>
         <!-- buttons?  need to make modals -->
-        <p> <a href="#"> Flickr </a> </p>
-        <p> <a href="#"> Instagram </a> </p>
-        <p> <a href="#"> Etsy </a> </p>
+        <p> <a id="flickr" href="#"> Flickr </a> </p>
+        <p> <a id="insta" href="http://www.pictaram.com/user/emilychickadee/2306756208"> Instagram </a> </p>
+        <p> <a id="etsy" href="https://www.etsy.com/shop/Caleari"> Etsy </a> </p>
       </div>
 
     </div>
-    
+
+
+
+    <!-- javascript -->
+      <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!-- own files -->
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>

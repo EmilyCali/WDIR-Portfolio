@@ -1,3 +1,32 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
 body {
-  background-color: purple;
+  background-color: ivory;
+}
+
+a {
+  text-decoration: none;
+}
+
+#linkedInModal, #warModal, #gardenModal, #beerBookModal, #hungryModal, #quiltModal, #githubModal, #flickrModal, #instaModal, #etsyModal {
+  background-color: rgba(0,0,0,0.4);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  overflow: auto;
+  display: none;
+}
+
+.modalframe {
+  background-color: white;
+  height: 80%;
+  width: 90%;
+  border-radius: 5px;
+  margin: 20px auto;
+  box-shadow: 0 3px 3px #C5Df71;
+  padding: 2px;
 }
