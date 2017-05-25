@@ -61,22 +61,21 @@ h2 {
 }
 
 /*animation, on click rotate horizontal*/
-h2{
-  animation:  realign 0.8s;
-  backface-visibility: hidden;
+.normal {
+  /*animation:  realign 0.8s;
+  backface-visibility: hidden;*/
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
-@keyframes realign {
-  /*0% {
-    transform: rotate(1deg);
-  }
-  50% {
-    transform: rotate(45deg);
-  }*/
+/*@keyframes realign {
   100% {
     transform: rotate(0deg);
   }
-}
+}*/
 
 
 
