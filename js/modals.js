@@ -12,6 +12,11 @@ console.log("modals linked");
 // var $linkedInModal = $("#linkedInModal");
 // var $closeLinkedInModal = $("#closeLinkedInModal");
 
+//Resume
+var $openResumeModal = $("#resume");
+var $resumeModal = $("#resumeModal");
+var $closeResumeModal = $("#closeResumeModal");
+
 //Project 1
 var $openWarModal = $("#war");
 var $warModal = $("#warModal");
@@ -75,6 +80,14 @@ var $closeFlickrModal = $("#closeFlickrModal");
 // var closeLinkedInModal = function() {
 //   $linkedInModal.css("display", "none");
 // };
+
+//Resume
+var openResumeModal = function() {
+  $resumeModal.css("display", "block");
+};
+var closeResumeModal = function() {
+  $resumeModal.css("display", "none");
+};
 
 //Project 1
 var openWarModal = function() {
@@ -155,6 +168,9 @@ var closeFlickrModal = function() {
 //grabbing the close to click and hide
 // $openLinkedInModal.on("click", openLinkedInModal);
 // $closeLinkedInModal.on("click", closeLinkedInModal);
+
+$openResumeModal.on("click", openResumeModal);
+$closeResumeModal.on("click", closeResumeModal);
 
 $openWarModal.on("click", openWarModal);
 $closeWarModal.on("click", closeWarModal);

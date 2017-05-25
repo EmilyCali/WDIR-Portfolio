@@ -5,7 +5,6 @@
   <title>Emily Cali portfolio</title>
 
   <!-- css -->
-  <!-- <link rel="stylesheet" type="text/css" href="css/skeleton.css" /> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
@@ -21,12 +20,21 @@
 </div>
 </section> -->
 
+<!-- resume -->
+<section id="resumeModal">
+  <!-- frame inside resume modal -->
+  <div id="resumeModalFrame" class="modalframe">
+    <iframe src="assets/Emily_Cali_Resume2017springnophone.pdf"></iframe>
+    <a id="closeResumeModal" class="close" href="#"> Close </a>
+  </div>
+</section>
+
 <!-- project 1 modal -->
 <section id="warModal">
   <!-- frame inside project 1 modal -->
   <div id="warModalFrame" class="modalframe">
     <iframe src="https://emilycali.github.io/WDIR-Project-1-WAR/"></iframe>
-    <a id="closeWarModal" href="#"> Close </a>
+    <a id="closeWarModal" class="close" href="#"> Close </a>
   </div>
 </section>
 
@@ -35,7 +43,7 @@
   <!-- frame inside project 2 modal -->
   <div id="gardenModalFrame" class="modalframe">
     <iframe src="https://safe-chamber-59689.herokuapp.com/"></iframe>
-    <a id="closeGardenModal" href="#"> Close </a>
+    <a id="closeGardenModal" class="close" href="#"> Close </a>
   </div>
 </section>
 
@@ -44,7 +52,7 @@
   <!-- frame inside project 3 modal -->
   <div id="beerBookModalFrame" class="modalframe">
     <iframe src="https://superawsomefunteam.herokuapp.com/"></iframe>
-    <a id="closeBeerBookModal" href="#"> Close </a>
+    <a id="closeBeerBookModal" class="close" href="#"> Close </a>
   </div>
 </section>
 
@@ -53,7 +61,7 @@
   <!-- frame inside project 4 modal -->
   <div id="hungryModalFrame" class="modalframe">
     <iframe src="https://hungry-for-more-app.herokuapp.com/"></iframe>
-    <a id="closeHungryModal" href="#"> Close </a>
+    <a id="closeHungryModal" class="close" href="#"> Close </a>
   </div>
 </section>
 
@@ -62,7 +70,7 @@
   <!-- frame inside project 5 modal -->
   <div id="quiltModalFrame" class="modalframe">
     <iframe></iframe>
-    <a id="closeQuiltModal" href="#"> Close </a>
+    <a id="closeQuiltModal" class="close" href="#"> Close </a>
   </div>
 </section>
 
@@ -80,7 +88,7 @@
   <!-- frame inside flickr modal -->
   <div id="flickrModalFrame" class="modalframe">
     <iframe></iframe>
-    <a id="closeFlickrModal" href="#"> Close </a>
+    <a id="closeFlickrModal" class="close" href="#"> Close </a>
   </div>
 </section>
 
@@ -122,11 +130,9 @@
       <br/>
       <br/>
       <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
       <h2 id="aHeading"> About </h2>
+      <br/>
+      <br/>
       <!-- begin text area for about -->
       <div id="about-text">
         <p> This site is a portfolio for Emily Cali, a graduate of the General Assembly Web Development Remote course offered in the Spring of 2017. This single page application was created to showcase the projects and skills that Miss Cali developed in the 13 week bootcamp that focused on HTML, CSS, JavaScript, Express, Mongo, Angularjs, Ruby, Ruby on Rails and Postgresql. Thank you for visiting! </p>
@@ -145,17 +151,15 @@
       <br/>
       <br/>
       <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
       <h2 id="bHeading"> Bio </h2>
+      <br/>
+      <br/>
       <!-- begin text area for bio -->
       <div id="bio-text">
         <p> Emily Cali has a Bachelor of Science Degree in Biomedical Photographic Communications from Rochester Institute of Technology. She has taken a fondness to web design and development and before taking the General Assembly WDIR Course she had been pursuing self study and hoped to test for a Microsoft Certified Solutions Certification in HTML, CSS and JS. Miss Cali currently works at Booz Allen Hamilton and likes to make quilts in her free time. </p>
         <p> <a id="linkedin" href="https://www.linkedin.com/in/emilycali/"> LinkedIn </a> </p>
         <!-- need a pdf for resume or modal to google drive file -->
-        <p> <a href="#"> Resume </a> </p>
+        <p> <a id="resume" href="#"> Resume </a> </p>
       </div>
       <!-- end text area for bio -->
     </div>
@@ -171,11 +175,9 @@
       <br/>
       <br/>
       <br/>
+      <h2 id="cHeading"> Work </h2>
       <br/>
       <br/>
-      <br/>
-      <br/>
-      <h2 id="cHeading"> Projects </h2>
       <!-- begin text area for projects -->
       <div id="github-text">
         <p> <a id="war" href="#"> The Card Game War </a> </p>
@@ -199,11 +201,9 @@
       <br/>
       <br/>
       <br/>
+      <h2 id="dHeading"> Media </h2>
       <br/>
       <br/>
-      <br/>
-      <br/>
-      <h2 id="dHeading"> Contact </h2>
       <!-- begin text area for contact -->
       <div id="social-text">
         <p> <a id="flickr" href="#"> Flickr </a> </p>

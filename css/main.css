@@ -8,9 +8,16 @@ html, body {
   height: 100%;
 }
 
+p {
+  font-size: 120%;
+  padding-top: 5%;
+}
+
 a {
   text-decoration: none;
   color: #545775;
+  font-size: 160%;
+  font-family: "Joehand 2", cursive;
 }
 
 
@@ -64,7 +71,7 @@ h2 {
   width: 20px;
   height: 20px;
   padding-top: 40%;
-  font-size: 70px;
+  font-size: 750%;
   color: ivory;
   font-family: "Joehand 2", cursive;
 }
@@ -101,7 +108,7 @@ h2 {
 /*========END MORE INFO AREAS==========*/
 
 /*=================MODALS==================*/
-#linkedInModal, #warModal, #gardenModal, #beerBookModal, #hungryModal, #quiltModal, #githubModal, #flickrModal, #instaModal, #etsyModal {
+#linkedInModal, #resumeModal, #warModal, #gardenModal, #beerBookModal, #hungryModal, #quiltModal, #githubModal, #flickrModal, #instaModal, #etsyModal {
   background-color: rgba(0,0,0,0.4);
   position: fixed;
   height: 100%;
@@ -109,6 +116,11 @@ h2 {
   z-index: 1;
   overflow: auto;
   display: none;
+}
+
+.close {
+  color: ivory;
+  font-size: 180%;
 }
 
 .modalframe {
