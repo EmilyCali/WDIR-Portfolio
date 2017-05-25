@@ -2,6 +2,8 @@ console.log("linked!");
 
   //=============== GRABBERS ==============
 
+//LINKED IN PRIVACY POLICIES WOULD NOT ALLOW LINKING
+
   //linkedIn
   // var $openLinkedInModal = $("#linkedin");
   // var $linkedInModal = $("#linkedInModal");
@@ -32,6 +34,8 @@ console.log("linked!");
   var $quiltModal = $("#quiltModal");
   var $closeQuiltModal = $("#closeQuiltModal");
 
+  //GITHUB PRIVACY POLICIES WOULD NOT ALLOW LINKING
+
   //Github Profile
   // var $openGithubModal = $("#git");
   // var $githubModal = $("#githubModal");
@@ -41,6 +45,8 @@ console.log("linked!");
   var $openFlickrModal = $("#flickr");
   var $flickrModal = $("#flickrModal");
   var $closeFlickrModal = $("#closeFlickrModal");
+
+  //ETSY AND INSTAGRAM REFUSED TO LINK, CLIENT BLOCKERS
 
   //Instagram
   // var $openInstagramModal = $("#insta");

@@ -9,8 +9,87 @@ body {
 
 a {
   text-decoration: none;
+  color: #545775;
 }
 
+div {
+
+}
+
+#main {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#about, #bio, #github, #social {
+  width: 25%;
+  height: 100vh;
+}
+
+#about {
+  background-color: #DBCFB0;
+}
+
+#bio {
+  background-color: #BFC8AD;
+}
+
+#github {
+  background-color: #90B494;
+}
+
+#social {
+  background-color: #718F94;
+}
+
+/*start these vertical*/
+h2 {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  /*white-space: nowrap;*/
+  display: inline-block;
+  position: center;
+  bottom: 30;
+  width: 20px;
+  height: 20px;
+  padding-top: 50%;
+  font-size: 80px;
+  color: #545775;
+}
+
+/*animation, on click rotate horizontal*/
+h2{
+  animation:  realign 0.8s;
+  backface-visibility: hidden;
+}
+
+@keyframes realign {
+  /*0% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }*/
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+
+/*=============MORE INFO AREAS============*/
+
+/*start these hidden but on click of section have them display, if one is clicked change the class to show it, if another is clicked change all to hide but for the one clicked?*/
+#about-text, #bio-text, #github-text, #social-text {
+  display: none;
+}
+
+/*============END MORE INFO AREAS==========*/
+
+/*=================MODALS==================*/
 #linkedInModal, #warModal, #gardenModal, #beerBookModal, #hungryModal, #quiltModal, #githubModal, #flickrModal, #instaModal, #etsyModal {
   background-color: rgba(0,0,0,0.4);
   position: fixed;
@@ -22,7 +101,7 @@ a {
 }
 
 .modalframe {
-  background-color: white;
+  background-color: #DBCFB0;
   height: 80%;
   width: 90%;
   border-radius: 5px;
@@ -30,3 +109,10 @@ a {
   box-shadow: 0 3px 3px #C5Df71;
   padding: 2px;
 }
+
+iframe {
+  height: 100%;
+  width: 100%;
+}
+
+/*=================END MODALS=============*/
