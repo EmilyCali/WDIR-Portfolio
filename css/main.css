@@ -1,10 +1,11 @@
 * {
-  margin: 0 auto;
-  padding: 0 auto;
+  margin: 0 auto; !important
+  padding: 0 auto; !important
 }
 
-body {
+html, body {
   background-color: ivory;
+  height: 100%;
 }
 
 a {
@@ -12,18 +13,23 @@ a {
   color: #545775;
 }
 
-div {
 
+.container {
+  min-height: 100%;
+  overflow: hidden;
 }
 
-#main {
-  display: flex;
-  flex-flow: row wrap;
+.row {
+  /*margin: 0; !important
+  padding: 0; !important*/
+  /*position: absolute; !important*/
 }
 
+/*columns are all set to the same height*/
+/*source of this trick found at https://www.credera.com/blog/technology-insights/full-height-column-layout-with-bootstrap/*/
 #about, #bio, #github, #social {
-  width: 25%;
-  height: 100vh;
+  margin-bottom: -9999px;
+  padding-bottom: 9999px;
 }
 
 #about {
@@ -42,25 +48,28 @@ div {
   background-color: #718F94;
 }
 
-/*start these vertical*/
+/*start the headers vertical*/
+/*trick found at https://stackoverflow.com/questions/4264527/vertical-text-direction*/
+/*modified for opposite direction and normal class is the average orientation of text on a page*/
 h2 {
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  /*white-space: nowrap;*/
+  white-space: nowrap;
   display: inline-block;
   position: center;
   bottom: 30;
   width: 20px;
   height: 20px;
-  padding-top: 50%;
-  font-size: 80px;
-  color: #545775;
+  padding-top: 40%;
+  font-size: 70px;
+  color: ivory;
+  font-family: "Joehand 2", cursive;
 }
 
-/*animation, on click rotate horizontal*/
+/*on click rotate horizontal*/
 .normal {
   /*animation:  realign 0.8s;
   backface-visibility: hidden;*/
@@ -69,6 +78,7 @@ h2 {
   -o-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
+  padding-top: 10%;
 }
 
 /*@keyframes realign {
@@ -84,9 +94,11 @@ h2 {
 /*start these hidden but on click of section have them display, if one is clicked change the class to show it, if another is clicked change all to hide but for the one clicked?*/
 #about-text, #bio-text, #github-text, #social-text {
   display: none;
+  padding: 5%;
+  font-family: "Candara", sans-serif;
 }
 
-/*============END MORE INFO AREAS==========*/
+/*========END MORE INFO AREAS==========*/
 
 /*=================MODALS==================*/
 #linkedInModal, #warModal, #gardenModal, #beerBookModal, #hungryModal, #quiltModal, #githubModal, #flickrModal, #instaModal, #etsyModal {
@@ -105,7 +117,7 @@ h2 {
   width: 90%;
   border-radius: 5px;
   margin: 20px auto;
-  box-shadow: 0 3px 3px #C5Df71;
+  box-shadow: 0 3px 3px grey;
   padding: 2px;
 }
 
@@ -115,3 +127,10 @@ iframe {
 }
 
 /*=================END MODALS=============*/
+
+/*=================TYPEFACES=============*/
+
+@font-face {
+  font-family: "Joehand 2";
+  src: url("./assets/JH2TRIAL.ttf");
+}
