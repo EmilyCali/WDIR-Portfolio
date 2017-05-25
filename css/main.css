@@ -20,6 +20,10 @@ a {
   font-family: "Joehand 2", cursive;
 }
 
+a:hover {
+  color: ivory;
+  text-decoration: none;
+}
 
 .container {
   min-height: 100%;
@@ -121,6 +125,7 @@ h2 {
 .close {
   color: ivory;
   font-size: 180%;
+  padding-top: 3%;
 }
 
 .modalframe {

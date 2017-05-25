@@ -50,9 +50,9 @@ var $closeQuiltModal = $("#closeQuiltModal");
 // var $closeGithubModal = $("#closeGithubFrame");
 
 //Flickr
-var $openFlickrModal = $("#flickr");
-var $flickrModal = $("#flickrModal");
-var $closeFlickrModal = $("#closeFlickrModal");
+// var $openFlickrModal = $("#flickr");
+// var $flickrModal = $("#flickrModal");
+// var $closeFlickrModal = $("#closeFlickrModal");
 
 //ETSY AND INSTAGRAM REFUSED TO LINK, CLIENT BLOCKERS
 
@@ -139,12 +139,12 @@ var closeQuiltModal = function() {
 
 
 //Flickr
-var openFlickrModal = function() {
-  $flickrModal.css("display", "block");
-};
-var closeFlickrModal = function() {
-  $flickrModal.css("display", "none");
-};
+// var openFlickrModal = function() {
+//   $flickrModal.css("display", "block");
+// };
+// var closeFlickrModal = function() {
+//   $flickrModal.css("display", "none");
+// };
 
 //instagram
 // var openInstagramModal = function() {
@@ -190,8 +190,8 @@ $closeQuiltModal.on("click", closeQuiltModal);
 // $openGithubModal.on("click", openGithubModal);
 // $closeGithubModal.on("click", closeGithubModal);
 
-$openFlickrModal.on("click", openFlickrModal);
-$closeFlickrModal.on("click", closeFlickrModal);
+// $openFlickrModal.on("click", openFlickrModal);
+// $closeFlickrModal.on("click", closeFlickrModal);
 
 // $openInstagramModal.on("click", openInstagramModal);
 // $closeInstagramModal.on("click", closeInstagramModal);
